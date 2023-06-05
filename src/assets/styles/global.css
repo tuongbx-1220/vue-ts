@@ -1,0 +1,44 @@
+html,
+body {
+  @apply w-full h-full;
+  touch-action: manipulation;
+  scroll-behavior: smooth;
+}
+
+body,
+pre,
+* {
+  font-family: 'Noto Sans JP', Helvetica, 'Hiragino Kaku Gothic Pro', 'Hiragino Kaku Gothic ProN',
+    'ヒラギノ角ゴ Pro W3', メイリオ, 'MS Pゴシック', 'ＭＳ ゴシック', 'YuGothic', Meiryo, sans-serif;
+  line-height: 1.75;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../styles/fonts/NotoSansJP-Regular.otf') format('truetype');
+}
+
+body,
+* {
+  font-family: 'Noto Sans JP', Helvetica, 'Hiragino Kaku Gothic Pro', 'Hiragino Kaku Gothic ProN',
+    'ヒラギノ角ゴ Pro W3', メイリオ, 'MS Pゴシック', 'ＭＳ ゴシック', 'YuGothic', Meiryo, sans-serif;
+  line-height: 1.75;
+}
+/* Custom scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ee3311;
+}

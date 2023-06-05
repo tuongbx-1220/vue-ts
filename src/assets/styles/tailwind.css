@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .btn-default {
+    @apply cursor-pointer text-3xl py-1;
+  }
+
+  .btn-full {
+    @apply p-2 rounded-full border-2 transition duration-150 ease-out;
+  }
+
+  .btn-full:focus {
+    @apply outline-none border-red;
+  }
+
+  .text-link {
+    @apply block px-4 py-2;
+  }
+
+  .text-link:hover {
+    @apply bg-red  text-white;
+  }
+
+  .btn {
+    @apply p-2 rounded border-red border-2 transition duration-150 ease-out;
+  }
+
+  .btn:hover,
+  .btn:focus,
+  .btn:active {
+    @apply opacity-90;
+  }
+
+  .btn-primary {
+    @apply bg-red text-white disabled:opacity-[0.4] disabled:cursor-default;
+  }
+
+  .btn-outline {
+    @apply bg-white text-red;
+  }
+
+  .input-base-default {
+    @apply w-full rounded-md border border-light2 bg-white py-3 px-3 text-base font-medium text-light8 outline-none focus:shadow-md;
+  }
+
+  .label-base-default {
+    @apply mb-3 block text-base font-medium;
+  }
+
+  .asterisk-red {
+    @apply inline-block text-red transform translate-x-2;
+  }
+}
